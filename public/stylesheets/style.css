@@ -1,0 +1,178 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:700,300);
+@import url(http://fonts.googleapis.com/css?family=Allan:400,700);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, .gender, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+table th,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  font-size: 1em; }
+
+body {
+  background-color: white;
+  font-family: "Roboto Condensed", serif;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #162521;
+  max-width: 650px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+p {
+  margin-bottom: 1.3em; }
+
+h1, h2, h3, h4 {
+  font-family: "Allan";
+  color: rgba(11, 77, 82, 0.5);
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2; }
+
+h1 {
+  margin-top: 0;
+  font-size: 2.441em; }
+
+h2 {
+  font-size: 1.953em; }
+
+h3 {
+  font-size: 1.563em; }
+
+h4 {
+  font-size: 1.25em; }
+
+small, .font_small {
+  font-size: 0.8em; }
+
+a:hover {
+  color: rgba(11, 77, 82, 0.5); }
+
+table {
+  width: 100%;
+  border: solid #162521 1px;
+  text-align: left; }
+  table tr {
+    height: 30px; }
+  table td, table th {
+    padding: 5px; }
+  table th {
+    font-weight: bold;
+    letter-spacing: .1em;
+    background-color: #0B4D52;
+    color: white; }
+  table tr:nth-child(odd) {
+    background-color: rgba(11, 77, 82, 0.05); }
+
+.form {
+  margin: 0 auto;
+  background-color: rgba(11, 77, 82, 0.05);
+  padding: 20px;
+  border: solid #162521 1px;
+  border-radius: 5px;
+  width: 85%; }
+
+label, .gender {
+  display: inline-block;
+  width: 100px; }
+
+input, select, textarea {
+  font-family: "Roboto Condensed"; }
+
+select {
+  border: solid rgba(22, 37, 33, 0.5) 1px; }
+
+.gender {
+  margin-bottom: 20px; }
+
+input[type='text'], select {
+  width: 150px; }
+
+.radio {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 0; }
+
+.agree {
+  width: 200px; }
+
+#agree {
+  margin-left: 100px; }
+
+.message {
+  vertical-align: top;
+  float: left;
+  margin-bottom: 20px; }
+
+input + label, input + .gender {
+  margin-left: 10px; }
+
+input[type='submit'] {
+  margin-left: 100px;
+  height: 30px;
+  width: 70px;
+  background: white;
+  border: solid #162521 1px;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: .8em;
+  letter-spacing: .1em; }
+
+textarea {
+  display: inline-block;
+  vertical-align: top;
+  width: 400px;
+  height: 150px; }
+
+ul {
+  list-style-type: circle;
+  list-style-position: inside;
+  padding: 10px; }
+
+ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+  padding: 10px; }

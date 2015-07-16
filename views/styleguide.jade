@@ -1,0 +1,109 @@
+extends layout
+
+block content
+
+  h1 This is an example of Heading 1
+  h2 This is an example of heading 2
+  h3 This is an example of heading 3
+  h4 This is an example of heading 4
+  h5 This is an example of heading 5
+  h6 This is an example of heading 6
+  p
+    | A simple paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  h1 This is an example of Heading 1
+  p
+    | A simple paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  h2 This is an example of heading 2
+  p
+    | A simple paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  h3 This is an example of heading 3
+  p
+    | A simple paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  h4 This is an example of heading 4
+  p
+    | A simple paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  h5 This is an example of heading 5
+  p
+    | A simple paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  h6 This is an example of heading 6
+  p
+    | A simple paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  p
+    | Some inline examples. 
+    strong This is strong text
+    | , consectetur adipisicing elit, 
+    em this is text with emphasis
+    |  ut labore et dolore magna aliqua. 
+    a(href='/') This is linked text
+    |  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  ul
+    li An unordered list
+    li With an item
+    li And more items
+  ol
+    li An ordered list
+    li With an item
+    li And more items
+  h4 Table Example
+  table
+    thead
+      tr
+        th Name
+        th Address
+        th Phone
+    tbody
+      tr
+        td Nicholas
+        td 10 Elm Street
+        td +1 (555) 234-2322
+      tr
+        td Ted
+        td 281a Elmvale Road
+        td +1 (555) 389-2391
+      tr
+        td Dwayne
+        td 892 Henley Cresent
+        td +1 (555) 950-9234
+  h4 Form Example
+  div.form
+    form
+      p
+        label(for='name') Name
+        input(id='name' type='text')
+      p
+        label(for='email') Email
+        input(id='email' type='text')
+      div
+        span.gender Gender
+        div.radio
+          input(id='male' type='radio' name='gender')
+          label(for='male') Male
+          br
+        div.radio
+          input(id='female' type='radio' name='gender')
+          label(for='female') Female
+          br
+        div.radio
+          input(id='other' type='radio' name='gender')
+          label(for='other') Other
+          br
+      p
+        label(for='country') Country
+        select(id='country')
+          option New Zealand
+          option Canada
+          option United States
+      p
+        label(for='country2') Country
+        select(id='country2' multiple='multiple')
+          option New Zealand
+          option Canada
+          option United States
+      p
+        input(id='agree' type='checkbox')
+        label.agree(for='agree') Agree to Terms & Conditions
+      div.message
+        label(for='message') Message
+        textarea(id='message')
+      p
+        input(type='submit', value='Submit')

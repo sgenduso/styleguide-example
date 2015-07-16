@@ -1,0 +1,83 @@
+.form {
+  margin: 0 auto;
+  background-color: rgba($teal, .05);
+  padding: 20px;
+  border: solid $black 1px;
+  border-radius: 5px;
+  width: 85%;
+}
+
+label, {
+  display: inline-block;
+  width: 100px;
+}
+
+input, select, textarea {
+  font-family: $font1;
+}
+
+select {
+  border: solid rgba($black, .5) 1px;
+}
+
+.gender {
+  @extend label;
+  margin-bottom: 20px;
+}
+
+// input[type='radio'] {
+//   // margin-left: 100px;
+//   margin-top: 0;
+//   margin-bottom: 0;
+// }
+
+input[type='text'], select {
+  width: 150px;
+}
+
+.radio {
+  display: inline-block;
+  vertical-align: top;
+  // width: 100%;
+  // margin-left: 100px;
+  margin-top: 0;
+}
+
+.agree {
+    width: 200px;
+}
+
+#agree {
+  margin-left: 100px;
+}
+
+.message {
+  vertical-align: top;
+  float: left;
+  margin-bottom: 20px;
+}
+
+input + label {
+  margin-left: 10px;
+}
+
+input[type='submit'] {
+  margin-left: 100px;
+  height: 30px;
+  width: 70px;
+  background: white;
+  border: solid $black 1px;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: .8em;
+  letter-spacing: .1em;
+}
+
+textarea {
+  display: inline-block;
+  vertical-align: top;
+  // float: left;
+  // margin-left: 100px;
+  width: 400px;
+  height: 150px;
+}
